@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jash Patel — Web Design Portfolio</title>
+  <meta name="description" content="A collection of fully built, production-quality demo websites — one per local business vertical — available to preview live." />
+  <meta name="theme-color" content="#1e3a5f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231e3a5f'/%3E%3Cpath d='M20 40l10-18 6 10 8-14 10 22' stroke='%23f2a93b' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1e3a5f;
+      --primary-dark: #142c48;
+      --accent: #f2a93b;
+      --bg-alt: #f6f8fb;
+      --text-muted: #5b6472;
+      --border: #e4e7ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      color: #1b1f27;
+      background: #fff;
+      line-height: 1.6;
+    }
+    h1, h2 { font-family: "Sora", system-ui, sans-serif; color: var(--primary); margin: 0; }
+    .container { max-width: 1080px; margin-inline: auto; padding-inline: 24px; }
+    header.hero {
+      padding: 96px 0 72px;
+      background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      text-align: center;
+    }
+    header.hero h1 { color: #fff; font-size: clamp(2rem, 4vw, 2.8rem); }
+    header.hero p { max-width: 56ch; margin: 18px auto 0; color: rgba(255,255,255,.78); font-size: 1.08rem; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    main { padding: 72px 0 96px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease;
+      background: #fff;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(20,30,50,.12); }
+    .card-media {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: "Sora", sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: -.01em;
+    }
+    .card-body { padding: 22px; }
+    .card-body p { color: var(--text-muted); font-size: .92rem; margin: 8px 0 16px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--bg-alt);
+      color: var(--primary);
+    }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: .9rem;
+      color: var(--primary);
+    }
+    .card.placeholder { opacity: .55; }
+    .card.placeholder .card-media { background: var(--bg-alt) !important; color: var(--text-muted); }
+    .card.placeholder .card-link { color: var(--text-muted); pointer-events: none; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: .88rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Web Design Portfolio</p>
+      <h1>Fully Built Demo Websites, One Per Business</h1>
+      <p>Every project below is a complete, working site — not a mockup. Built to show local businesses exactly what a modern, conversion-focused website looks like for their trade.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Live Demos</h2>
+      <div class="grid">
+        <a class="card" href="localpro/index.html" style="text-decoration:none;">
+          <div class="card-media" style="background: linear-gradient(135deg,#1e3a5f,#2f5a8f);">Ironclad Home Services</div>
+          <div class="card-body">
+            <div class="tag-row"><span class="tag">Plumbing</span><span class="tag">Electrical</span><span class="tag">HVAC</span></div>
+            <p>The universal local-service template — conversion-first layout, before/after slider, live testimonial carousel, and a validated quote form. Reskin this one first for fast turnarounds.</p>
+            <span class="card-link">View demo →</span>
+          </div>
+        </a>
+
+        <div class="card placeholder">
+          <div class="card-media">Coming Soon</div>
+          <div class="card-body">
+            <div class="tag-row"><span class="tag">Restaurant</span></div>
+            <p>Editorial fine-dining concept — full-bleed photography, semantic menu, reservation CTA.</p>
+            <span class="card-link">In progress →</span>
+          </div>
+        </div>
+
+        <div class="card placeholder">
+          <div class="card-media">Coming Soon</div>
+          <div class="card-body">
+            <div class="tag-row"><span class="tag">Dental</span></div>
+            <p>Calming clinic concept — booking-first hero, insurance badges, patient reviews.</p>
+            <span class="card-link">In progress →</span>
+          </div>
+        </div>
+
+        <div class="card placeholder">
+          <div class="card-media">Coming Soon</div>
+          <div class="card-body">
+            <div class="tag-row"><span class="tag">Salon &amp; Spa</span></div>
+            <p>Editorial luxury concept — parallax hero, stylist portfolios, integrated booking.</p>
+            <span class="card-link">In progress →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Built by Jash Patel &middot; each demo is a self-contained static site in its own folder of this repo.</p>
+    </div>
+  </footer>
+</body>
+</html>
