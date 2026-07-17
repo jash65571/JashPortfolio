@@ -36,6 +36,7 @@ any folder can be copied out into its own repo later without breaking anything.
 | [`spa/`](spa/) | Still Water Spa — serene wellness concept | ✅ Built |
 | [`dental-kids/`](dental-kids/) | Bright Smiles Family Dental — playful pediatric concept | ✅ Built |
 | [`barbershop/`](barbershop/) | Neon Fade Barber & Color Bar — bold maximalist concept | ✅ Built |
+| [`restaurant-casual/`](restaurant-casual/) | The Corner Table — casual neighborhood restaurant concept | ✅ Built |
 
 ## Reskinning a demo for a new lead
 
