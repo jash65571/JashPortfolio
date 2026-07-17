@@ -33,7 +33,7 @@ any folder can be copied out into its own repo later without breaking anything.
 | [`auto-repair/`](auto-repair/) | Precision Auto Works — trust-focused shop concept | ✅ Built |
 | [`electrician/`](electrician/) | Volt Electric Co. — high-contrast industrial concept | ✅ Built |
 | [`roofing/`](roofing/) | Summit Roofing — photography-led concept | ✅ Built |
-| `spa/` | Still Water Spa — serene wellness concept | 🚧 Planned |
+| [`spa/`](spa/) | Still Water Spa — serene wellness concept | ✅ Built |
 
 ## Reskinning a demo for a new lead
 
