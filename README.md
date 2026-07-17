@@ -28,7 +28,7 @@ any folder can be copied out into its own repo later without breaking anything.
 |---|---|---|
 | [`localpro/`](localpro/) | Ironclad Home Services — universal trades template (plumbing, electrical, HVAC) | ✅ Built |
 | [`restaurant/`](restaurant/) | Ember & Ash — editorial fine-dining concept | ✅ Built |
-| `dental/` | Harbor Dental — calming modern clinic concept | 🚧 Planned |
+| [`dental/`](dental/) | Harbor Dental — calming modern clinic concept | ✅ Built |
 | `salon/` | The Lockwood Salon — editorial luxury salon concept | 🚧 Planned |
 | `auto-repair/` | Precision Auto Works — trust-focused shop concept | 🚧 Planned |
 | `electrician/` | Volt Electric Co. — high-contrast industrial concept | 🚧 Planned |
