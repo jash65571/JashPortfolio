@@ -31,7 +31,7 @@ any folder can be copied out into its own repo later without breaking anything.
 | [`dental/`](dental/) | Harbor Dental — calming modern clinic concept | ✅ Built |
 | [`salon/`](salon/) | The Lockwood Salon — editorial luxury salon concept | ✅ Built |
 | [`auto-repair/`](auto-repair/) | Precision Auto Works — trust-focused shop concept | ✅ Built |
-| `electrician/` | Volt Electric Co. — high-contrast industrial concept | 🚧 Planned |
+| [`electrician/`](electrician/) | Volt Electric Co. — high-contrast industrial concept | ✅ Built |
 | `roofing/` | Summit Roofing — photography-led concept | 🚧 Planned |
 | `spa/` | Still Water Spa — serene wellness concept | 🚧 Planned |
 
