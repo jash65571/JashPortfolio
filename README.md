@@ -27,9 +27,13 @@ any folder can be copied out into its own repo later without breaking anything.
 | Folder | Concept | Status |
 |---|---|---|
 | [`localpro/`](localpro/) | Ironclad Home Services — universal trades template (plumbing, electrical, HVAC) | ✅ Built |
-| `restaurant/` | Fine-dining editorial concept | 🚧 Planned |
-| `dental/` | Calming modern clinic concept | 🚧 Planned |
-| `salon/` | Luxury salon/spa concept | 🚧 Planned |
+| [`restaurant/`](restaurant/) | Ember & Ash — editorial fine-dining concept | ✅ Built |
+| `dental/` | Harbor Dental — calming modern clinic concept | 🚧 Planned |
+| `salon/` | The Lockwood Salon — editorial luxury salon concept | 🚧 Planned |
+| `auto-repair/` | Precision Auto Works — trust-focused shop concept | 🚧 Planned |
+| `electrician/` | Volt Electric Co. — high-contrast industrial concept | 🚧 Planned |
+| `roofing/` | Summit Roofing — photography-led concept | 🚧 Planned |
+| `spa/` | Still Water Spa — serene wellness concept | 🚧 Planned |
 
 ## Reskinning a demo for a new lead
 
