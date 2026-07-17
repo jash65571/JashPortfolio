@@ -32,7 +32,7 @@ any folder can be copied out into its own repo later without breaking anything.
 | [`salon/`](salon/) | The Lockwood Salon — editorial luxury salon concept | ✅ Built |
 | [`auto-repair/`](auto-repair/) | Precision Auto Works — trust-focused shop concept | ✅ Built |
 | [`electrician/`](electrician/) | Volt Electric Co. — high-contrast industrial concept | ✅ Built |
-| `roofing/` | Summit Roofing — photography-led concept | 🚧 Planned |
+| [`roofing/`](roofing/) | Summit Roofing — photography-led concept | ✅ Built |
 | `spa/` | Still Water Spa — serene wellness concept | 🚧 Planned |
 
 ## Reskinning a demo for a new lead
