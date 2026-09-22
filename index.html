@@ -1,225 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jash Patel — Web Design Portfolio</title>
-  <meta name="description" content="A collection of fully built, production-quality demo websites — one per local business vertical — available to preview live." />
-  <meta name="theme-color" content="#1e3a5f" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231e3a5f'/%3E%3Cpath d='M20 40l10-18 6 10 8-14 10 22' stroke='%23f2a93b' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #1e3a5f;
-      --primary-dark: #142c48;
-      --accent: #f2a93b;
-      --bg-alt: #f6f8fb;
-      --text-muted: #5b6472;
-      --border: #e4e7ec;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, sans-serif;
-      color: #1b1f27;
-      background: #fff;
-      line-height: 1.6;
-    }
-    h1, h2 { font-family: "Sora", system-ui, sans-serif; color: var(--primary); margin: 0; }
-    .container { max-width: 1080px; margin-inline: auto; padding-inline: 24px; }
-    header.hero {
-      padding: 96px 0 72px;
-      background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: #fff;
-      text-align: center;
-    }
-    header.hero h1 { color: #fff; font-size: clamp(2rem, 4vw, 2.8rem); }
-    header.hero p { max-width: 56ch; margin: 18px auto 0; color: rgba(255,255,255,.78); font-size: 1.08rem; }
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-size: .78rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    main { padding: 72px 0 96px; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-      margin-top: 40px;
-    }
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: transform .2s ease, box-shadow .2s ease;
-      background: #fff;
-    }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(20,30,50,.12); }
-    .card-media {
-      height: 150px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: "Sora", sans-serif;
-      font-weight: 800;
-      font-size: 1.3rem;
-      letter-spacing: -.01em;
-    }
-    .card-body { padding: 22px; }
-    .card-body p { color: var(--text-muted); font-size: .92rem; margin: 8px 0 16px; }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-    .tag {
-      font-size: .72rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--bg-alt);
-      color: var(--primary);
-    }
-    .card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 700;
-      font-size: .9rem;
-      color: var(--primary);
-    }
-    .card.placeholder { opacity: .55; }
-    .card.placeholder .card-media { background: var(--bg-alt) !important; color: var(--text-muted); }
-    .card.placeholder .card-link { color: var(--text-muted); pointer-events: none; }
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 32px 0;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: .88rem;
-    }
-  </style>
-</head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <p class="eyebrow">Web Design Portfolio</p>
-      <h1>Fully Built Demo Websites, One Per Business</h1>
-      <p>Every project below is a complete, working site — not a mockup. Built to show local businesses exactly what a modern, conversion-focused website looks like for their trade.</p>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="theme-color" content="#142d27">
+<title>Jash Patel | Software Developer</title><meta name="description" content="Software developer in Jersey City. Production systems at ABC Imaging, full-stack products, React, TypeScript, Python, and PHP/Laravel. No sponsorship needed."><link rel="canonical" href="https://jash65571.github.io/JashPortfolio/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Jash Patel"><meta property="og:title" content="Jash Patel | Software Developer"><meta property="og:description" content="Software developer in Jersey City. Production systems at ABC Imaging, full-stack products, React, TypeScript, Python, and PHP/Laravel. No sponsorship needed."><meta property="og:url" content="https://jash65571.github.io/JashPortfolio/"><meta property="og:image" content="https://jash65571.github.io/JashPortfolio/assets/images/social.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Jash Patel, software developer. Full-stack products and production systems."><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/JashPortfolio/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/JashPortfolio/assets/fonts/manrope-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/JashPortfolio/assets/fonts/manrope-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/JashPortfolio/assets/site.css"><script type="module" src="/JashPortfolio/assets/site.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://jash65571.github.io/JashPortfolio/","mainEntity":{"@type":"Person","name":"Jash Patel","jobTitle":"Software Developer","url":"https://jash65571.github.io/JashPortfolio/","sameAs":["https://github.com/jash65571","https://www.linkedin.com/in/jashpatel68/"],"knowsAbout":["Software development","React","TypeScript","Python","PHP","Laravel","Web development"]}}</script>
+</head><body class="" id="top"><a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="/JashPortfolio/" aria-label="Jash Patel home"><span class="monogram">jp<span>.</span></span><span class="brand-name">Jash Patel<span>Software developer</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="/JashPortfolio/#work" >Work</a>
+      <a href="/JashPortfolio/#experience">Experience</a><a href="/JashPortfolio/#approach">Approach</a><a href="/JashPortfolio/#contact">Contact</a>
+      <a href="/JashPortfolio/resume/" class="nav-resume" >Résumé <span aria-hidden="true">↗</span></a>
+    </nav></div></header><main id="main" tabindex="-1"><section class="hero container" aria-labelledby="hero-title"><div class="hero-copy">
+  <p class="eyebrow"><span class="small-cross" aria-hidden="true">✳</span> FULL-STACK SOFTWARE DEVELOPER</p>
+  <h1 id="hero-title">Complex systems.<br>Thoughtful code.<br><em>Real impact.</em></h1>
+  <p class="hero-intro">I’m Jash. I build web products, modernize production systems, and make the details work together.</p>
+  <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work<span aria-hidden="true">↗</span></a><a class="button button-plain" href="/JashPortfolio/resume/">View résumé<span aria-hidden="true">↗</span></a></div>
+  <div class="hero-footnote"><span class="mini-rule"></span><span>Currently building at <strong>ABC Imaging</strong></span></div>
+  </div><div class="system-panel" aria-label="Explore the layers of my ABC Imaging work">
+    <div class="panel-top"><span class="tiny-label">IN PRODUCTION / ABC IMAGING</span><span class="panel-corner" aria-hidden="true">↙</span></div>
+    <h2>Every layer.<br><em>One working system.</em></h2>
+    <div class="system-layers" aria-label="System layers">
+      <button type="button" class="layer is-active" aria-pressed="true" data-layer="interface"><span class="layer-index">01</span><span><strong>Interface</strong><small>React · User workflows</small></span><span class="layer-glyph" aria-hidden="true">▤</span></button>
+      <button type="button" class="layer" aria-pressed="false" data-layer="services"><span class="layer-index">02</span><span><strong>Services</strong><small>PHP / Laravel · REST</small></span><span class="layer-glyph" aria-hidden="true">{ }</span></button>
+      <button type="button" class="layer" aria-pressed="false" data-layer="operations"><span class="layer-index">03</span><span><strong>Operations</strong><small>Orders · Packaging · Shipping</small></span><span class="layer-glyph" aria-hidden="true">⇄</span></button>
+      <button type="button" class="layer" aria-pressed="false" data-layer="delivery"><span class="layer-index">04</span><span><strong>Delivery</strong><small>Docker · Jenkins · AWS</small></span><span class="layer-glyph" aria-hidden="true">↥</span></button>
     </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <h2>Live Demos</h2>
-      <div class="grid">
-        <a class="card" href="localpro/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#1e3a5f,#2f5a8f);">Ironclad Home Services</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Plumbing</span><span class="tag">Electrical</span><span class="tag">HVAC</span></div>
-            <p>The universal local-service template — conversion-first layout, before/after slider, live testimonial carousel, and a validated quote form. Reskin this one first for fast turnarounds.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="restaurant/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#1c1c1c,#8a2e2e);">Ember &amp; Ash</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Restaurant</span></div>
-            <p>Editorial fine-dining concept — moody full-screen hero, semantic seasonal menu, horizontal plate gallery, and a working reservation form.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="dental/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#2e5266,#3d6a80);">Harbor Dental</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Dental</span></div>
-            <p>Calming clinic concept — booking-first hero with parallax, floating booking widget, doctor bio, review carousel, and FAQ accordion.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="salon/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#1a1a1a,#b76e79);">The Lockwood Salon</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Salon &amp; Spa</span></div>
-            <p>Editorial luxury concept — parallax hero, 3D flip-card stylist portfolios, pricing guide, and a working booking form.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="auto-repair/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#1e3a5f,#ffb100);">Precision Auto Works</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Auto Repair</span></div>
-            <p>Trust-focused shop concept — flat-rate pricing, an animated price-estimate selector, technician bios, and a draggable before/after slider.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="electrician/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#111111,#ffc300);">Volt Electric Co.</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Electrician</span></div>
-            <p>High-contrast industrial concept — animated circuit-line hero, EV charger upsell block, and a panel-upgrade before/after showcase.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="roofing/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#1b263b,#c1440e);">Summit Roofing</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Roofing</span></div>
-            <p>Photography-led concept — draggable before/after slider as the centerpiece, a material-swatch gallery, warranty section, and a free-inspection form.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="spa/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#3f4b3f,#7c8c7a);">Still Water Spa</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Wellness Spa</span></div>
-            <p>Serene wellness concept — ambient animated hero, elegant no-box treatment list, membership tiers, and a gift-card CTA.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-        <a class="card" href="restaurant-casual/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#29335c,#e4572e);">The Corner Table</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Casual Restaurant</span></div>
-            <p>Warm neighborhood-diner concept — a day-of-week daily specials banner, a "meet the regulars" community section, and a semantic menu.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="barbershop/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#0a0a0a,#ff00c8,#7000ff);">Neon Fade Barber &amp; Color Bar</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Barbershop</span></div>
-            <p>Bold maximalist concept — cursor-follow gradient blob, a masonry portfolio grid with a lightbox, and an animated audio visualizer.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-
-        <a class="card" href="dental-kids/index.html" style="text-decoration:none;">
-          <div class="card-media" style="background: linear-gradient(135deg,#ffd6e8,#a0e7e5); color:#3d3d3d;">Bright Smiles Family Dental</div>
-          <div class="card-body">
-            <div class="tag-row"><span class="tag">Pediatric Dental</span></div>
-            <p>Playful pastel concept — bouncy mascot hero, a For Kids / For Adults service toggle, and cartoon tooth-care tips.</p>
-            <span class="card-link">View demo →</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Built by Jash Patel &middot; each demo is a self-contained static site in its own folder of this repo.</p>
-    </div>
-  </footer>
-</body>
-</html>
+    <div class="layer-detail" aria-live="polite"><span class="tiny-label" id="layer-label">THE INTERFACE</span><p id="layer-copy">A faster React frontend for the people moving real orders through EPOD.</p></div>
+    <div class="panel-bottom"><span>Explore a layer</span><a class="text-link" href="/JashPortfolio/work/abc-imaging/">Inside the work<span aria-hidden="true">↗</span></a></div>
+  </div></section>
+  <div class="facts-strip container"><div><span class="tiny-label">BASED IN</span><strong>Jersey City, New Jersey</strong></div><div><span class="tiny-label">WORK ACROSS</span><strong>Frontend · Backend · Infrastructure</strong></div><div><span class="tiny-label">U.S. WORK AUTHORIZATION</span><strong>No sponsorship needed</strong></div></div>
+  <section class="work-section container section" id="work" aria-labelledby="work-title"><div class="section-heading"><div><p class="eyebrow"><span>01</span> SELECTED WORK</p><h2 id="work-title">Built with purpose.<br><em>Backed by the details.</em></h2></div><p>Production systems, independent products,<br>and a little room to play.</p></div>
+    <article class="featured-project"><div class="featured-main"><div class="featured-meta"><span>EMPLOYED WORK</span><span>2025 → PRESENT</span></div><div class="abc-wordmark">ABC <span>IMAGING</span></div><h3>The system<br>behind the print.</h3><p>From legacy code to clearer services. My work on EPOD connects the interface, order logic, shipping, and release pipeline.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>PHP / Laravel</li><li>REST APIs</li><li>AWS</li></ul><a class="button button-lime" href="/JashPortfolio/work/abc-imaging/">Read the case study<span aria-hidden="true">↗</span></a></div><div class="impact-panel"><span class="tiny-label">IMPACT IN THE WORKFLOWS I WORK ON</span><div><strong>80<span>%</span></strong><p>reduction in page-load time</p></div><div><strong>90<span>%</span></strong><p>fewer manual corrections</p></div><div><strong>35<span>%</span></strong><p>fewer deployment errors</p></div><a href="/JashPortfolio/work/abc-imaging/#impact">Context behind the numbers ↗</a></div></article>
+    <article class="tan-feature"><div class="tan-story"><div class="featured-meta"><span>INDEPENDENT PRODUCT</span><span>PAST PROJECT / 2026</span></div><h3>TryApplyNow<span>A product with a lot<br>going on underneath.</span></h3><p>Employer data becomes searchable jobs. A profile becomes a tailored resume. I built across the full path, from ingestion and databases to the candidate experience.</p><ul class="tags" aria-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Supabase</li></ul><a class="button button-dark" href="/JashPortfolio/work/tryapplynow/">Explore the full project<span aria-hidden="true">↗</span></a></div><div class="tan-map"><span class="tiny-label">THE PRODUCT, END TO END</span><div><span>01</span><section><h4>Collect & normalize</h4><p>ATS adapters · Raw jobs · Deduplication</p></section></div><div><span>02</span><section><h4>Search & discover</h4><p>Full-text search · Filters · Public job pages</p></section></div><div><span>03</span><section><h4>Prepare & apply</h4><p>Resume upload · Editing · Tailored exports</p></section></div><div><span>04</span><section><h4>Run the platform</h4><p>Accounts · Scheduled jobs · Usage controls</p></section></div><p class="tan-map-note">A case study in building, operating, and narrowing a large product.</p></div></article><div class="projects-grid"><article class="project-card "><a class="project-visual" href="/JashPortfolio/work/sparemeet/" tabindex="-1" aria-hidden="true"><div class="inventory-visual" aria-label="SpareMeet inventory lifecycle overview"><div class="visual-top"><b>sparemeet<span>®</span></b><span>PART LIFECYCLE</span></div><div class="inventory-route"><span>Intake</span><span class="route-line"></span><span>Review</span><span class="route-line"></span><span class="route-current">Available</span></div><div class="inventory-record"><span class="record-tag">ONE PART. A COMPLETE HISTORY.</span><div class="record-row"><span>Condition</span><strong>Recorded</strong></div><div class="record-row"><span>Compatibility</span><strong>Checked</strong></div><div class="record-row"><span>Stock state</span><strong>Tracked</strong></div><div class="record-row"><span>Publication</span><strong>Separate</strong></div></div><p>From intake to the next repair.</p></div><span class="visual-arrow">↗</span></a><div class="card-meta"><span>Full-stack product</span><span>Built · pre-launch</span></div><h3><a href="/JashPortfolio/work/sparemeet/">SpareMeet<span aria-hidden="true">↗</span></a></h3><p>A used phone-parts storefront and inventory system, built around the condition and history of each part.</p><div class="card-tech">Astro <span aria-hidden="true">/</span> React <span aria-hidden="true">/</span> TypeScript <span aria-hidden="true">/</span> Cloudflare D1</div></article><article class="project-card "><a class="project-visual" href="/JashPortfolio/work/replyproof/" tabindex="-1" aria-hidden="true"><div class="screenshot-visual reply-visual"><img src="/JashPortfolio/assets/images/replyproof.jpg" alt="The ReplyProof web checker comparing an email thread with a draft reply" width="1348" height="926" loading="lazy"></div><span class="visual-arrow">↗</span></a><div class="card-meta"><span>Web & browser extension</span><span>Live web product</span></div><h3><a href="/JashPortfolio/work/replyproof/">ReplyProof<span aria-hidden="true">↗</span></a></h3><p>An email reply checker with a Gmail extension, subscription billing, and a small, focused workflow.</p><div class="card-tech">Next.js <span aria-hidden="true">/</span> React <span aria-hidden="true">/</span> TypeScript <span aria-hidden="true">/</span> Cloudflare Workers</div></article><article class="project-card wide-card"><a class="project-visual" href="/JashPortfolio/work/one-favor/" tabindex="-1" aria-hidden="true"><div class="screenshot-visual favor-visual"><img src="/JashPortfolio/assets/images/one-favor.png" alt="ONE FAVOR browser game showing a neighborhood trading puzzle" width="1440" height="900" loading="lazy"></div><span class="visual-arrow">↗</span></a><div class="card-meta"><span>Interactive product</span><span>Browser game</span></div><h3><a href="/JashPortfolio/work/one-favor/">ONE FAVOR<span aria-hidden="true">↗</span></a></h3><p>A neighborhood trading puzzle with 100 levels, one shared ruleset, and hints that solve from your current state.</p><div class="card-tech">React <span aria-hidden="true">/</span> TypeScript <span aria-hidden="true">/</span> Vite <span aria-hidden="true">/</span> BFS solver</div></article></div>
+    <div class="work-bottom"><p>More code. More problems worth solving.</p><a class="button button-outline" href="/JashPortfolio/projects/">Explore the project index<span aria-hidden="true">↗</span></a></div>
+  </section>
+  <section class="experience-section section" id="experience" aria-labelledby="experience-title"><div class="container experience-layout"><div class="section-sticky"><p class="eyebrow"><span>02</span> EXPERIENCE</p><h2 id="experience-title">Built in the<br><em>real world.</em></h2><p>From game interfaces to factory tools and production workflows.</p><a class="text-link" href="/JashPortfolio/assets/Jash-Patel-Resume.pdf">Download résumé PDF<span aria-hidden="true">↗</span></a></div><div class="experience-list"><article class="experience-item"><div class="experience-top"><span class="tiny-label">MAR 2025 TO PRESENT</span><span class="current-label">CURRENT</span></div><h3>ABC Imaging</h3><p class="role">Software Developer · Carlstadt, NJ</p><p>Modernizing EPOD and the systems around it. My work spans the React interface, PHP/Laravel services, shipping and billing rules, and deployments on AWS.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>PHP / Laravel</li><li>SQL</li><li>Docker</li><li>Jenkins</li><li>AWS</li></ul></article><article class="experience-item"><div class="experience-top"><span class="tiny-label">AUG 2023 TO AUG 2024</span></div><h3>ZT Systems</h3><p class="role">Software Developer · Jersey City, NJ</p><p>Built Python tools that helped factory and engineering teams catch hardware and build issues before test runs.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>Linux</li><li>Tkinter</li><li>VMware</li><li>PXE</li></ul></article><article class="experience-item"><div class="experience-top"><span class="tiny-label">JAN 2020 TO MAR 2023</span></div><h3>Savvology Games</h3><p class="role">Frontend Developer</p><p>Built game screens, dashboards, and reusable frontend components. Worked with backend engineers to keep API integrations and user flows reliable.</p><ul class="tags" aria-label="Technologies"><li>React</li><li>Next.js</li><li>TypeScript</li><li>Angular</li><li>GraphQL</li></ul></article><div class="education"><span class="tiny-label">EDUCATION</span><p><strong>Computer Engineering</strong><br>University of Mumbai · Bachelor’s, 2019 to 2022</p></div></div></div></section>
+  <section class="approach-section container section" id="approach" aria-labelledby="approach-title"><div class="section-heading"><div><p class="eyebrow"><span>03</span> HOW I WORK</p><h2 id="approach-title">Curious about the problem.<br><em>Careful with the solution.</em></h2></div></div><div class="principles"><article><span>01 / UNDERSTAND</span><h3>Start with the actual workflow.</h3><p>The useful questions come before the stack. Who does the work? Where do errors happen? What needs to be true when it is done?</p></article><article><span>02 / BUILD</span><h3>Connect the whole path.</h3><p>I work across screens, APIs, data, and deployment. A finished feature needs to hold together after the happy path ends.</p></article><article><span>03 / CHECK</span><h3>Make it easy to trust.</h3><p>Clear rules, focused tests, and repeatable releases matter. So does being honest about what has been tested and what has not.</p></article></div>
+    <div class="ai-note"><div><span class="tiny-label">A NOTE ON MY TOOLKIT</span><h3>Yes, I use AI.<br><em>I still own the decisions.</em></h3></div><div><p>I use AI tools to explore options, review code, and look for edge cases. I check the suggestions against the code and the problem before using them.</p><p>A concrete example: on my network discovery tool, AI review helped with bounded concurrency and binding a scan to the right network interface. The README records what I adopted and what I rejected.</p><a class="text-link" href="https://github.com/jash65571/avida-network-discovery#ai-usage">Read the example<span aria-hidden="true">↗</span></a></div></div>
+    <div class="toolkit"><span class="tiny-label">TOOLS I WORK WITH</span><p>React <span>/</span> TypeScript <span>/</span> Python <span>/</span> PHP & Laravel <span>/</span> SQL <span>/</span> REST APIs <span>/</span> Docker <span>/</span> AWS</p></div>
+  </section></main><footer class="site-footer" id="contact"><div class="container">
+    <div class="contact-top"><p class="eyebrow"><span>04</span> NEXT CONVERSATION</p><span class="availability">Open to software engineering roles</span></div>
+    <div class="contact-grid"><h2>Have something<br>worth <em>building?</em></h2><div class="contact-copy"><p>I’m looking for a team that cares about the product and the code behind it.</p><p>Based in Jersey City. Open to U.S. roles and relocation. No sponsorship needed.</p><a class="button button-lime" href="mailto:jash.code8@gmail.com?subject=Software%20engineering%20opportunity">Let’s talk<span aria-hidden="true">↗</span></a></div></div>
+    <div class="email-row"><a href="mailto:jash.code8@gmail.com">jash.code8@gmail.com</a><button type="button" class="copy-email" data-copy-email="jash.code8@gmail.com" aria-label="Copy email address">Copy email <span aria-hidden="true">⧉</span></button><span class="copy-status" role="status"></span></div>
+    <div class="footer-bottom"><p>© 2026 Jash Patel</p><div><a class="text-link" href="https://github.com/jash65571">GitHub<span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/jashpatel68/">LinkedIn<span aria-hidden="true">↗</span></a><a class="text-link" href="/JashPortfolio/assets/Jash-Patel-Resume.pdf">Résumé PDF<span aria-hidden="true">↗</span></a></div><a href="#top" class="back-top">Back to top ↑</a></div>
+  </div></footer></body></html>

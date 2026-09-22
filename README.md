@@ -1,75 +1,55 @@
-# JashPortfolio
+# Jash Patel · Software Developer
 
-A collection of fully built, production-quality demo websites — one folder per demo,
-each a self-contained static site. Built for outreach: real local businesses without a
-website get sent the closest-matching live demo link.
+**Portfolio:** https://jash65571.github.io/JashPortfolio/
 
-**Live site:** `https://jash65571.github.io/JashPortfolio/` (once GitHub Pages is enabled
-on this repo — see below).
+A custom portfolio for production systems, full-stack products, and practical engineering work. It replaces the former local-business demo collection.
 
-## Structure
+## What's here
 
-```
-JashPortfolio/
-├── index.html          ← portfolio landing page, links to every demo
-├── localpro/            ← universal local-service template (plumbing/electrical/HVAC)
-│   ├── index.html
-│   ├── css/styles.css
-│   └── js/main.js
-└── (more folders added per demo — one per business vertical)
-```
+- A recruiter-focused homepage with interactive system layers.
+- Six complete case studies: ABC Imaging, TryApplyNow, SpareMeet, ReplyProof, ONE FAVOR, and Network Discovery.
+- A searchable project index with ten selected projects.
+- A readable, printable resume and the original downloadable resume PDF.
+- Three playable ONE FAVOR starter boards, with current-state hints, undo, restart, and keyboard controls.
+- Direct email, email-copy, LinkedIn, and GitHub contact paths.
+- Mobile navigation, reduced-motion support, semantic HTML, metadata, social card, sitemap, and a custom 404 page.
 
-Each demo folder is fully self-contained (its own CSS/JS, no shared dependencies), so
-any folder can be copied out into its own repo later without breaking anything.
+## Design and build
 
-## Demos
+The layout, CSS, content, and interactions are custom. The public pages use plain HTML and CSS with small JavaScript modules. There is no runtime framework, remote font request, analytics SDK, tracking cookie, API key, database, or paid backend.
 
-| Folder | Concept | Status |
-|---|---|---|
-| [`localpro/`](localpro/) | Ironclad Home Services — universal trades template (plumbing, electrical, HVAC) | ✅ Built |
-| [`restaurant/`](restaurant/) | Ember & Ash — editorial fine-dining concept | ✅ Built |
-| [`dental/`](dental/) | Harbor Dental — calming modern clinic concept | ✅ Built |
-| [`salon/`](salon/) | The Lockwood Salon — editorial luxury salon concept | ✅ Built |
-| [`auto-repair/`](auto-repair/) | Precision Auto Works — trust-focused shop concept | ✅ Built |
-| [`electrician/`](electrician/) | Volt Electric Co. — high-contrast industrial concept | ✅ Built |
-| [`roofing/`](roofing/) | Summit Roofing — photography-led concept | ✅ Built |
-| [`spa/`](spa/) | Still Water Spa — serene wellness concept | ✅ Built |
-| [`dental-kids/`](dental-kids/) | Bright Smiles Family Dental — playful pediatric concept | ✅ Built |
-| [`barbershop/`](barbershop/) | Neon Fade Barber & Color Bar — bold maximalist concept | ✅ Built |
-| [`restaurant-casual/`](restaurant-casual/) | The Corner Table — casual neighborhood restaurant concept | ✅ Built |
+Node builds the pages from shared templates and content. Generated HTML is committed at the repository root so the existing GitHub Pages branch deployment can serve it directly.
 
-## Reskinning a demo for a new lead
-
-Each site's CSS uses a small set of design tokens at the top of `css/styles.css`:
-
-```css
-:root {
-  --color-primary: #1e3a5f;
-  --color-primary-dark: #142c48;
-  --color-accent: #f2a93b;
-  --color-accent-dark: #d9910f;
-  --color-bg: #ffffff;
-  --color-bg-alt: #f6f8fb;
-}
+```sh
+npm run build
+npm run check
+npm test
+npm run dev
 ```
 
-Swap these 6 values (and the Google Fonts import in `index.html` if you want a different
-typeface pairing), update the business name/copy/service area in the HTML, and the whole
-site rethemes consistently — no other CSS edits needed.
+Requires Node 22 or newer. There are no npm dependencies to install. Open the local address printed by the server; the site uses the `/JashPortfolio/` base path.
 
-## Local preview
+## Edit content
 
-Each demo is plain HTML/CSS/JS — no build step. Open `index.html` directly in a browser,
-or serve the folder with any static server, e.g.:
+- `src/content.mjs`: career facts, case studies, project data.
+- `scripts/build.mjs`: shared page structure and homepage content.
+- `assets/site.css`: visual system and responsive layouts.
+- `assets/site.js`: navigation, system layers, search, copy, and print controls.
+- `assets/game.mjs` and `assets/puzzle.js`: the portfolio puzzle demo.
+- `assets/Jash-Patel-Resume.pdf`: original resume supplied by Jash.
 
-```
-npx serve localpro
-```
+Run `npm run build` after editing source templates or content. Commit both the sources and generated pages.
 
-## Hosting
+## Publish
 
-GitHub Pages serves this repo from the `main` branch root, so:
-- `https://jash65571.github.io/JashPortfolio/` → the landing page (`index.html`)
-- `https://jash65571.github.io/JashPortfolio/localpro/` → the Ironclad demo
+GitHub Pages serves `main` from `/` at the public URL above. Push a normal commit to `main`; the Pages workflow deploys the committed static files. `.nojekyll` keeps the site out of Jekyll processing. No custom domain or paid plan is required.
 
-To enable: repo **Settings → Pages → Source: Deploy from a branch → `main` / `/(root)`**.
+The former site remains in Git history at commit `b26f2c1`. The rebuild does not rewrite that history.
+
+## Content and assets
+
+Employer work is described at a high level. No employer source, customer data, internal screenshots, credentials, or private-repository source trees are included. Performance outcomes are attributed to Jash's supplied resume. Independent projects are labeled by their reviewed status, not assumed commercial success.
+
+Project screenshots come from Jash's own work. Fonts are self-hosted Manrope and Instrument Serif, distributed under their included SIL Open Font License files. No generated portraits or stock project images are used.
+
+See [research and content decisions](docs/RESEARCH.md) and [verification](docs/VERIFICATION.md).
