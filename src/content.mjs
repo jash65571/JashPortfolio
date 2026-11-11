@@ -7,7 +7,7 @@ export const person = {
 };
 
 export const experience = [
-  { company: 'ABC Imaging', role: 'Software Developer', dates: 'Mar 2025 to present', location: 'Carlstadt, NJ', description: 'Modernizing EPOD and the systems around it. My work spans the React interface, PHP/Laravel services, shipping and billing rules, and deployments on AWS.', points: ['Refactor legacy order and work-order flows into REST APIs.', 'Build and maintain FotoPrint, ABC2, DryInk, and related internal tools.', 'Integrate FedEx shipping, packaging rules, and billing validation.', 'Debug production issues across the frontend, services, database, and infrastructure.'], tech: ['React', 'PHP / Laravel', 'SQL', 'Docker', 'Jenkins', 'AWS'] },
+  { company: 'ABC Imaging', role: 'Software Developer', dates: 'Mar 2025 to present', location: 'Carlstadt, NJ', description: 'Modernizing EPOD and the systems around it. My work spans the React interface, PHP/Laravel services, shipping and billing rules, and deployments on AWS.', points: ['Modernized EPOD with React and Laravel services, reducing page-load time by 80% in the measured workflow.', 'Build and maintain FotoPrint, ABC2, DryInk, and related internal tools.', 'Integrated FedEx shipping, packaging rules, and billing checks, reducing manual corrections by 90% in affected flows.', 'Built Docker/Jenkins delivery pipelines on AWS, reducing deployment errors by 35%; debugged production issues across the stack.'], tech: ['React', 'PHP / Laravel', 'SQL', 'Docker', 'Jenkins', 'AWS'] },
   { company: 'ZT Systems', role: 'Software Developer', dates: 'Aug 2023 to Aug 2024', location: 'Jersey City, NJ', description: 'Built Python tools that helped factory and engineering teams catch hardware and build issues before test runs.', points: ['Automated hardware and build-data checks, saving 10+ hours of manual checks each week.', 'Correlated Linux server logs with build records to narrow down failures.', 'Wrapped validation tools in a Tkinter UI for operators.', 'Tested OS images using PXE and VMware; traced networking and system setup issues.'], tech: ['Python', 'Linux', 'Tkinter', 'VMware', 'PXE'] },
   { company: 'Savvology Games', role: 'Frontend Developer', dates: 'Jan 2020 to Mar 2023', location: '', description: 'Built game screens, dashboards, and reusable frontend components. Worked with backend engineers to keep API integrations and user flows reliable.', points: ['Created shared UI components reused across three game features.', 'Reduced repeated API requests and simplified client-side data flows.', 'Added error handling and lightweight caching to game and dashboard screens.'], tech: ['React', 'Next.js', 'TypeScript', 'Angular', 'GraphQL'] },
 ];
@@ -31,24 +31,59 @@ export const projects = [
     links: [],
   },
   {
-    slug: 'sparemeet', number: '02', title: 'SpareMeet', subtitle: 'Inventory with a memory.', category: 'Full-stack product', status: 'Built · pre-launch', year: '2026',
-    intro: 'A used phone-parts storefront and inventory system, built around the condition and history of each part.',
+    slug: 'taskono', number: '02', title: 'TASKONO', subtitle: 'Small tools. Built to be useful.', category: 'Live developer product', status: 'Live · 20 tools', year: '2026',
+    intro: 'Twenty free browser-first tools for writing, time, PDFs, OCR, images, and printable documents.',
+    role: 'Creator · Product and full-stack engineering', tech: ['Astro', 'React', 'TypeScript', 'Cloudflare Pages', 'PDF & OCR', 'Vitest', 'Playwright'],
+    lead: 'The best utility is the one someone can open, finish a task with, and trust.',
+    problem: 'Everyday tasks such as counting PDF words, making a timesheet, or reading a scan often require accounts, uploads, or paid tools. I wanted to build fast, clear alternatives that do the useful work right in the browser.',
+    sections: [
+      { title: 'Design a family, not a pile of demos.', body: 'TASKONO has 20 live tools across work and time, text and writing, PDF and documents, and images. Shared page structure, input patterns, exports, guides, and navigation keep each tool easy to learn without losing its own purpose.' },
+      { title: 'Keep file work in the browser.', body: 'Tools use local processing for text, PDF, OCR, image editing, and printable files. People can review, correct, copy, and download the result without uploading their private documents for processing or creating an account.' },
+      { title: 'Test the awkward cases.', body: 'PDFs can have missing text layers, OCR can be uncertain, and printable QR sheets can have unused labels. I build warnings, previews, limits, cancellation, and real export checks into the workflow. Unit and browser tests protect those edge cases.' },
+      { title: 'Ship and observe responsibly.', body: 'Astro serves fast static pages; React powers the interactive tools. Cloudflare Pages hosts releases. Search metadata, guides, browser testing, and consent-aware analytics help me improve the site without making traffic or indexing claims.' },
+    ],
+    metrics: [['20', 'live browser tools'], ['4', 'tool categories'], ['0', 'accounts required']],
+    takeaway: 'Useful engineering is not measured by how many controls a screen has. It is measured by how reliably someone can finish their task.',
+    note: 'Live product reviewed November 2026. Tool count and features describe the public site at that time. Private repository; no claims of user counts, revenue, or search rankings.',
+    links: [{label:'Visit TASKONO',href:'https://taskono.com/'},{label:'Try PDF Word Counter',href:'https://taskono.com/pdf-word-counter/'}],
+  },
+  {
+    slug: 'careview', number: '03', title: 'Careview Specialty Pharmacy', subtitle: 'A careful storefront and staff workflow.', category: 'Client web platform', status: 'Built · launch checks', year: '2026',
+    intro: 'A responsive pickup-only pharmacy storefront paired with a protected staff workspace.',
+    role: 'Client project · Full-stack engineering', tech: ['React', 'TypeScript', 'Vinext', 'Cloudflare Workers', 'D1', 'R2'],
+    lead: 'A storefront is not ready when the pages look finished. Orders, stock, staff access, and launch rules must agree.',
+    problem: 'The client needed a clear public shopping flow and a separate staff area for products, stock, orders, and store settings. Business and health-related workflows also needed strict boundaries before launch.',
+    sections: [
+      { title: 'Connect the customer and staff journeys.', body: 'I built catalog and search views, product pages, a pickup cart, and guest order flows. The admin area manages products, categories, stock, order states, business hours, and publishing from one workspace.' },
+      { title: 'Protect the state behind each request.', body: 'Checkout calculates totals on the server, verifies quantities, reserves stock atomically, and handles repeated requests. Staff routes check access and use protected sessions; private document routes are not public storefront pages.' },
+      { title: 'Make launch gates real.', body: 'Pickup ordering depends on approved store details, policies, notifications, and data review. Prescription upload paths remain disabled until the client approves the required hosting and operational checks. No compliance certification is implied.' },
+      { title: 'Verify before publishing.', body: 'Type checks, build checks, route and domain tests, and mobile browser reviews cover the main flows. DNS activation, real catalog data, email delivery, and final owner approval remain separate launch tasks.' },
+    ],
+    metrics: [],
+    takeaway: 'For a business app, a safe and clear boundary between built features and approved operations matters as much as the interface.',
+    note: 'The codebase is private. This is a pre-launch engineering case study; the custom domain and live order operations are not presented as verified.',
+    links: [],
+  },
+
+  {
+    slug: 'sparemeet', number: '04', title: 'SpareMeet', subtitle: 'Inventory with a memory.', category: 'Full-stack product', status: 'Built · pre-launch', year: '2026',
+    intro: 'An inventory and storefront system for used phone parts, with stock history and physical location tracking.',
     role: 'Independent project · Full-stack development', tech: ['Astro', 'React', 'TypeScript', 'Cloudflare D1', 'R2', 'Drizzle'],
     lead: 'Two phone screens can share a model number and still be very different products. Condition, compatibility, testing, and stock history need to survive every step of the sale.',
     problem: 'A repair shop needs to manage individual used parts, explain their condition, and keep a public catalog aligned with staff inventory. A simple product table cannot capture that whole lifecycle.',
     sections: [
       { title: 'Model the part before the storefront.', body: 'The application separates inventory state from publication state. A part can move through review, availability, reservation, sale, return, repair, or archive. A shared lifecycle module checks allowed transitions and records the right kind of history event.' },
       { title: 'Treat checkout as a request.', body: 'Checkout revalidates the cart against the live catalog before creating a pending-review order. A repeat submission uses an idempotency key. Stock reservation belongs to shop confirmation, so sending a request and accepting an order remain separate actions.' },
-      { title: 'Build for the people at the counter.', body: 'The staff flow covers intake, condition, compatibility, location, commercial details, and review. The public side turns that inventory into a searchable catalog. Role checks protect staff and financial actions.' },
+      { title: 'Build for the people at the counter.', body: 'The staff flow covers intake, condition, compatibility, nested physical locations, commercial details, and review. Location records connect each part to its shop, rack, and bin. The public side turns that inventory into a searchable catalog. Role checks protect staff and financial actions.' },
       { title: 'Plan for running it.', body: 'The repo includes migration and backup tools, a restore test, deployment smoke checks, accessibility checks, and staff guides. Production infrastructure, real inventory onboarding, and shop policy decisions remain part of the launch work.' },
     ],
     metrics: [['9', 'inventory states'], ['2', 'separate state models'], ['1', 'order for a repeated request']],
     takeaway: 'A useful commerce system starts with accurate stock and clear promises. The data model has to describe what the shop can actually fulfill.',
-    note: 'Codebase reviewed in September 2026. This is a pre-launch project, not a claim of live customers or revenue. Source is private.',
+    note: 'Codebase reviewed in November 2026. Owner-run deployment and inventory onboarding remain. This is not a claim of live customers or revenue. Source is private.',
     links: [],
   },
   {
-    slug: 'replyproof', number: '03', title: 'ReplyProof', subtitle: 'Catch the unanswered question.', category: 'Web & browser extension', status: 'Live web product', year: '2026',
+    slug: 'replyproof', number: '05', title: 'ReplyProof', subtitle: 'Catch the unanswered question.', category: 'Web & browser extension', status: 'Live web product', year: '2026',
     intro: 'An email reply checker with a Gmail extension, subscription billing, and a small, focused workflow.',
     role: 'Independent project · Product and full-stack development', tech: ['Next.js', 'React', 'TypeScript', 'Cloudflare Workers', 'D1', 'Stripe', 'Manifest V3'],
     lead: 'A reply can be well written and still miss the question. ReplyProof checks what a message asked against what the draft actually answers.',
@@ -65,7 +100,7 @@ export const projects = [
     links: [{label:'Visit ReplyProof',href:'https://replyproof.tech/'}],
   },
   {
-    slug: 'one-favor', number: '04', title: 'ONE FAVOR', subtitle: 'A small puzzle. A real state machine.', category: 'Interactive product', status: 'Browser game', year: '2026',
+    slug: 'one-favor', number: '06', title: 'ONE FAVOR', subtitle: 'A small puzzle. A real state machine.', category: 'Interactive product', status: 'Browser game', year: '2026',
     intro: 'A neighborhood trading puzzle with 100 levels, one shared ruleset, and hints that solve from your current state.',
     role: 'Independent project · Game and frontend development', tech: ['React', 'TypeScript', 'Vite', 'BFS solver', 'Vitest', 'Playwright'],
     lead: 'Carry one item. Trade with a neighbor. Leave everyone with what they want. The rules fit in a sentence; the order of your choices makes the puzzle.',
@@ -82,7 +117,7 @@ export const projects = [
     links: [],
   },
   {
-    slug: 'network-discovery', number: '05', title: 'Network Discovery', subtitle: 'Find what is actually connected.', category: 'Python & systems', status: 'Public source', year: '2026',
+    slug: 'network-discovery', number: '07', title: 'Network Discovery', subtitle: 'Find what is actually connected.', category: 'Python & systems', status: 'Public source', year: '2026',
     intro: 'A Python command-line tool for local network discovery, open-port checks, and mDNS services.',
     role: 'Independent project · Python development', tech: ['Python', 'asyncio', 'Scapy', 'psutil', 'zeroconf', 'Rich'],
     lead: 'A laptop can have Wi-Fi, Ethernet, and a tether connected at once. A network tool needs to inspect the interface you selected, not whichever route the operating system prefers.',
@@ -99,7 +134,7 @@ export const projects = [
     links: [{label:'Read the source',href:'https://github.com/jash65571/avida-network-discovery'}],
   },
   {
-    slug: 'tryapplynow', number: '06', title: 'TryApplyNow', subtitle: 'Search is a data problem.', category: 'Search & data', status: 'Past project', year: '2026',
+    slug: 'tryapplynow', number: '08', title: 'TryApplyNow', subtitle: 'Search is a data problem.', category: 'Search & data', status: 'Past project', year: '2026',
     intro: 'An end-to-end job-search platform: source ingestion, job discovery, resume workflows, accounts, and application tools.',
     role: 'Independent project · Product, full-stack, and data engineering', tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Supabase', 'REST APIs', 'Background jobs'],
     lead: 'A job-search page is only useful if the data behind it is current, distinct, and searchable. The interface is the last step in a much larger system.',
@@ -123,5 +158,5 @@ export const otherProjects = [
   { title:'FlipStitch',category:'Interactive',year:'2026',description:'A React Native / Expo puzzle with 20 validated hoops, a pure TypeScript solver, undo, and local progress.',tech:'React Native · Expo · TypeScript',href:'https://github.com/jash65571/Flipstitch',status:'Prototype' },
   { title:'RIPPLE',category:'Interactive',year:'2026',description:'A cause-and-effect browser puzzle. One plan is tested against several known futures in a harbor district.',tech:'TypeScript · React · Three.js',href:'https://github.com/jash65571/RIPPLE',status:'Prototype' },
   { title:'Tariff Verify',category:'Web',year:'2026',description:'A Next.js web application exploring tariff information and verification workflows.',tech:'Next.js · TypeScript',href:'https://github.com/jash65571/tariff-varify',status:'Prototype' },
-  { title:'Weather App',category:'Web',year:'2024',description:'A small browser app that retrieves current conditions through the OpenWeatherMap API.',tech:'JavaScript · HTML · CSS',href:'https://github.com/jash65571/Weather-App-Project',status:'Learning project' },
+  { title:'Manuscript Reviewer',category:'Systems',year:'2026',description:'A local video review engine for frame ledgers, shot boundaries, audio evidence, and caption readiness.',tech:'Python · FFmpeg · TypeScript · Tauri',href:'https://github.com/jash65571/annotation',status:'Public source' },
 ];
