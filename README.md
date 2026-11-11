@@ -6,9 +6,9 @@ A custom portfolio for production systems, full-stack products, and practical en
 
 ## What's here
 
-- A recruiter-focused homepage with interactive system layers.
-- Six complete case studies: ABC Imaging, TryApplyNow, SpareMeet, ReplyProof, ONE FAVOR, and Network Discovery.
-- A searchable project index with ten selected projects.
+- A recruiter-focused homepage featuring TASKONO, a live set of 20 browser tools, client work, and interactive system layers.
+- Eight complete case studies: ABC Imaging, TASKONO, Careview Specialty Pharmacy, SpareMeet, ReplyProof, ONE FAVOR, Network Discovery, and TryApplyNow.
+- A searchable project index with twelve selected projects, including Manuscript Reviewer.
 - A readable, printable resume and the original downloadable resume PDF.
 - Three playable ONE FAVOR starter boards, with current-state hints, undo, restart, and keyboard controls.
 - Direct email, email-copy, LinkedIn, and GitHub contact paths.
@@ -48,7 +48,7 @@ The former site remains in Git history at commit `b26f2c1`. The rebuild does not
 
 ## Content and assets
 
-Employer work is described at a high level. No employer source, customer data, internal screenshots, credentials, or private-repository source trees are included. Performance outcomes are attributed to Jash's supplied resume. Independent projects are labeled by their reviewed status, not assumed commercial success.
+Employer work is described at a high level. No employer source, customer data, internal screenshots, credentials, or private-repository source trees are included. Performance outcomes are attributed to Jash's supplied resume. Independent projects and client work are labeled by their reviewed status, not assumed commercial success. TASKONO is live at https://taskono.com/. Careview and SpareMeet are described as pre-launch; private repositories stay private.
 
 Project screenshots come from Jash's own work. Fonts are self-hosted Manrope and Instrument Serif, distributed under their included SIL Open Font License files. No generated portraits or stock project images are used.
 
