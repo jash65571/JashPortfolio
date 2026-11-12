@@ -1,9 +1,11 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { person, projects, experience, otherProjects } from '../src/content.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const cssVersion = createHash('sha256').update(await readFile(resolve(root, 'assets/site.css'))).digest('hex').slice(0, 12);
 const base = '/JashPortfolio/';
 const origin = 'https://jash65571.github.io';
 const url = (p='') => base + p;
@@ -41,7 +43,7 @@ function layout({title,description,path='',content,active='',extraScript='',body
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${full}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Jash Patel"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${full}"><meta property="og:image" content="${origin+url('assets/images/social.jpg')}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Jash Patel, software developer. Full-stack products and production systems."><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="${url('assets/favicon.svg')}" type="image/svg+xml"><link rel="preload" href="${url('assets/fonts/manrope-regular.woff')}" as="font" type="font/woff" crossorigin><link rel="preload" href="${url('assets/fonts/manrope-bold.woff')}" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="${url('assets/site.css')}"><script type="module" src="${url('assets/site.js')}"></script>${extraScript}
+<link rel="stylesheet" href="${url('assets/site.css')}?v=${cssVersion}"><script type="module" src="${url('assets/site.js')}"></script>${extraScript}
 <script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'ProfilePage',url:full,mainEntity:{'@type':'Person',name:person.name,jobTitle:'Software Developer',url:origin+base,sameAs:[person.github,person.linkedin],knowsAbout:['Software development','React','TypeScript','Python','PHP','Laravel','Web development']}})}</script>
 </head><body class="${bodyClass}" id="top">${header(active)}<main id="main" tabindex="-1">${content}</main>${footer()}</body></html>`;
 }
