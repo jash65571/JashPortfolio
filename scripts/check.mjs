@@ -18,7 +18,8 @@ for(const file of pages){
   const refs=[...html.matchAll(/(?:href|src)="([^"]+)"/g),...html.matchAll(/property="og:image" content="([^"]+)"/g)].map(m=>m[1].replace('https://jash65571.github.io',''));
   for(const ref of refs){
     if(ref.startsWith('http')||ref.startsWith('mailto:'))continue;
-    const [path,hash]=ref.split('#');
+    const [refPath,hash]=ref.split('#');
+    const path=refPath.split('?')[0];
     if(path&&!path.startsWith(base)) {issues.push(`${file}: unexpected relative URL ${ref}`);continue;}
     let target=path?resolve(root,path.slice(base.length)):file;
     if(path.endsWith('/'))target=join(target,'index.html');
